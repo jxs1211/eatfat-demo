@@ -44,7 +44,7 @@
             border-radius: 8px;
             margin-bottom: 40px;
         }
-        .video-container iframe {
+        .video-container iframe, .video-container video {
             position: absolute;
             top: 0;
             left: 0;
@@ -92,12 +92,10 @@
 
     <main>
         <div class="video-container">
-            <!-- Replace the src with your video URL -->
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-                    title="KT Demo Introduction" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
+            <video width="100%" controls>
+                <source src="videos/eatfat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <div class="features">
@@ -126,7 +124,7 @@
     </main>
 
     <footer>
-        <p>© 2025 KT Demo. All rights reserved.</p>
+        <p> 2025 KT Demo. All rights reserved.</p>
     </footer>
 </body>
 </html>
